@@ -4,16 +4,36 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <div class="col-2">
-                            <div class="py-4 align-items-center">
-                                <h6 class="text-uppercase fw-bold">Dc Comics</h6>
-                                <ul class="list-unstyled">
-                                    <li v-for="(linkDc, i) in dcComicsLinks" :key="i"><a href="javascript:void(0)">{{ linkDc.name }}</a></li>
-                                </ul>
-                                <h6 class="text-uppercase fw-bold">Shop</h6>
-                                <ul class="list-unstyled">
-                                    <li v-for="(linkShop, i) in shopLinks" :key="i"><a href="javascript:void(0)">{{ linkShop.name }}</a></li>
-                                </ul>
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="py-4 align-items-center">
+                                    <h6 class="text-uppercase fw-bold">Dc Comics</h6>
+                                    <ul class="list-unstyled">
+                                        <li v-for="(link, i) in dcComicsLinks" :key="i"><a :href="link.href">{{ link.name }}</a></li>
+                                    </ul>
+                                    <h6 class="text-uppercase fw-bold">Shop</h6>
+                                    <ul class="list-unstyled">
+                                        <li v-for="(link, i) in shopLinks" :key="i"><a :href="link.href">{{ link.name }}</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-2">
+                                <div class="py-4 align-items-center">
+                                    <h6 class="text-uppercase fw-bold">Dc</h6>
+                                    <ul class="list-unstyled">
+                                        <li v-for="(link, i) in dcLinks" :key="i"><a :href="link.href">{{ link.name }}</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-2">
+                                <div class="py-4 align-items-center">
+                                    <h6 class="text-uppercase fw-bold">Sites</h6>
+                                    <ul class="list-unstyled">
+                                        <li v-for="(link, i) in sitesLink" :key="i"><a :href="link.href">{{ link.name }}</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -116,6 +136,28 @@ export default {
                 },
                 {
                     name: 'Contact Us',
+                    href: '#',
+                },
+            ],
+            sitesLink: [
+                {
+                    name: 'DC',
+                    href: '#',
+                },
+                {
+                    name: 'MAD Magazine',
+                    href: '#',
+                },
+                {
+                    name: 'DC Kids',
+                    href: '#',
+                },
+                {
+                    name: 'DC Universe',
+                    href: '#',
+                },
+                {
+                    name: 'DC Power Visa',
                     href: '#',
                 },
             ],
