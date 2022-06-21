@@ -7,11 +7,11 @@
                         <div class="py-4 align-items-center">
                             <h6 class="text-uppercase fw-bold">Dc Comics</h6>
                             <ul class="list-unstyled">
-                                <li v-for="linkDc in dcComicsLinks" :key="linkDc">{{ linkDc.name }}</li>
+                                <li v-for="linkDc in dcComicsLinks" :key="linkDc"><a href="javascript:void(0)">{{ linkDc.name }}</a></li>
                             </ul>
                             <h6 class="text-uppercase fw-bold">Shop</h6>
                             <ul class="list-unstyled">
-                                <li v-for="linkShop in shopLinks" :key="linkShop">{{ linkShop.name }}</li>
+                                <li v-for="linkShop in shopLinks" :key="linkShop"><a href="javascript:void(0)">{{ linkShop.name }}</a></li>
                             </ul>
                         </div>
                     </div>
@@ -133,7 +133,11 @@ export default {
         ul li {
             font-family: Arial, Helvetica, sans-serif;
             font-size: .6rem;
-            color: #797979;
+
+            a {
+                text-decoration: none;
+                color: #797979;
+            }
         }
 
         img {
