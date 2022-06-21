@@ -1,6 +1,8 @@
 <template>
-    <div class="sign-up">
-        <div class="container">sign up bar</div>
+    <div>
+        <div class="sign-up">
+            <div class="container">sign up bar</div>
+        </div>
     </div>
 </template>
 

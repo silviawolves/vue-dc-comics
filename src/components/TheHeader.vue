@@ -70,7 +70,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    header {
+header {
+        background-color: white;
 
         .my-navbar {
             display: flex;
