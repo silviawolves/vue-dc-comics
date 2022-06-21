@@ -4,15 +4,17 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <div class="py-4 align-items-center">
-                            <h6 class="text-uppercase fw-bold">Dc Comics</h6>
-                            <ul class="list-unstyled">
-                                <li v-for="linkDc in dcComicsLinks" :key="linkDc"><a href="javascript:void(0)">{{ linkDc.name }}</a></li>
-                            </ul>
-                            <h6 class="text-uppercase fw-bold">Shop</h6>
-                            <ul class="list-unstyled">
-                                <li v-for="linkShop in shopLinks" :key="linkShop"><a href="javascript:void(0)">{{ linkShop.name }}</a></li>
-                            </ul>
+                        <div class="col-2">
+                            <div class="py-4 align-items-center">
+                                <h6 class="text-uppercase fw-bold">Dc Comics</h6>
+                                <ul class="list-unstyled">
+                                    <li v-for="(linkDc, i) in dcComicsLinks" :key="i"><a href="javascript:void(0)">{{ linkDc.name }}</a></li>
+                                </ul>
+                                <h6 class="text-uppercase fw-bold">Shop</h6>
+                                <ul class="list-unstyled">
+                                    <li v-for="(linkShop, i) in shopLinks" :key="i"><a href="javascript:void(0)">{{ linkShop.name }}</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
