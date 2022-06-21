@@ -1,5 +1,7 @@
 <template>
-    <div class="banner">banner blu</div>
+    <div class="banner">
+        <div class="container">banner blu</div>
+    </div>
 </template>
 
 <script>

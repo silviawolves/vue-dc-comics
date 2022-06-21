@@ -1,6 +1,8 @@
 <template>
     <div>
-        <main>content goes here</main>
+        <main>
+            <div class="container">→ Content goes here ←</div>
+        </main>
     </div>
 </template>
 
@@ -14,6 +16,7 @@ export default {
     main {
         background-color: #1C1C1C;
         color: white;
-        padding: 1rem;
+        padding: 2rem;
+        font-weight: bold;
     }
 </style>

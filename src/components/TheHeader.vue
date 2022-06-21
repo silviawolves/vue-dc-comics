@@ -1,6 +1,10 @@
 <template>
     <div>
-        <header>dc comics</header>
+        <header>
+            <div class="container">
+                <img src="/img/dc-logo.png" alt="">
+            </div>
+        </header>
     </div>
 </template>
 
@@ -12,6 +16,10 @@ export default {
 
 <style lang="scss" scoped>
     header {
-        padding: 1rem;
+        padding: .5rem;
+
+        img {
+            height: 60px;
+        }
     }
 </style>

@@ -1,6 +1,8 @@
 <template>
     <div>
-        <footer>footer</footer>
+        <footer>
+            <div class="container">footer</div>
+        </footer>
     </div>
 </template>
 
