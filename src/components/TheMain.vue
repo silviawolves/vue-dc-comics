@@ -2,7 +2,7 @@
     <div>
         <main>
             <div class="banner-fumetti"></div>
-            <div class="container py-5 position-relative">
+            <div class="container pt-5 pb-3 position-relative">
                 <div class="flag">Current Series</div>
 
                 <div class="row g-3">
@@ -10,6 +10,8 @@
                         <ContainerFumetti :imgUrl="elemento.thumb" :alt="elemento.series" :imgText="elemento.series"></ContainerFumetti>
                     </div>
                 </div>
+
+                <button class="btn btn-primary text-uppercase rounded-0 px-5 d-block mx-auto mt-4">Load More</button>
                 
             </div>
         </main>
