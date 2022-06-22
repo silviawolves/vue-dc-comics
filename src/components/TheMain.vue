@@ -123,7 +123,7 @@ export default {
                 background-color: #0282F9;
                 text-transform: uppercase;
                 display: inline-block;
-                padding: .3rem 1.5rem;
+                padding: .3rem 2rem;
                 position: absolute;
                 top: -25px;
             }
