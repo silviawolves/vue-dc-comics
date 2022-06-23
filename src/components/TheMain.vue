@@ -101,7 +101,7 @@ export default {
                 }
             ]
         }
-    }
+    },
 }
 </script>
 
@@ -120,12 +120,12 @@ export default {
         }
 
         .flag {
-                background-color: #0282F9;
-                text-transform: uppercase;
-                display: inline-block;
-                padding: .3rem 2rem;
-                position: absolute;
-                top: -25px;
-            }
+            background-color: #0282F9;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: .3rem 2rem;
+            position: absolute;
+            top: -25px;
+        }
     }
 </style>
